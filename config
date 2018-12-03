@@ -170,13 +170,14 @@ bar {
 }
 
 # start network manager
-#exec_always nm-applet
+exec --no-startup-id nm-applet 
+#exec wicd-gtk -t
 
 # set correct keyboard layout
 #exec_always setxkbmap -layout gb
 
 # volume icon
-exec_always volumeicon
+exec volumeicon
 
 # bind i3lock to key combination
 bindsym $mod+Shift+x exec i3lock
