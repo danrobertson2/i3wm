@@ -170,8 +170,8 @@ bar {
 }
 
 # start network manager
-exec --no-startup-id nm-applet 
-#exec wicd-gtk -t
+#exec --no-startup-id nm-applet 
+exec wicd-gtk -t
 
 # set correct keyboard layout
 #exec_always setxkbmap -layout gb
