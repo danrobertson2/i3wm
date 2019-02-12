@@ -171,7 +171,7 @@ bar {
 
 # start network manager
 #exec --no-startup-id nm-applet 
-exec wicd-gtk -t
+#exec wicd-gtk -t
 
 # set correct keyboard layout
 #exec_always setxkbmap -layout gb
@@ -199,3 +199,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightne
 
 # Thunar
 bindsym $mod+t exec thunar
+
+# Set Background
+#exec --no-startup-id feh --bg-scale /home/daniel/Pictures/Wallpapers/radpack_3.jpg
+exec --no-startup-id xsetroot -solid "#333333"
