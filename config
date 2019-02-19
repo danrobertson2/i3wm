@@ -197,7 +197,7 @@ bar {
 
 # start network manager
 #exec --no-startup-id nm-applet 
-exec --no-startup-id wicd
+exec --no-startup-id wicd-gtk --tray
 
 # set correct keyboard layout
 #exec_always setxkbmap -layout gb
@@ -231,5 +231,5 @@ bindsym Print exec gnome-screenshot -i
 
 
 # Set Background
-exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/grid1.jpg
-#exec --no-startup-id xsetroot -solid "#333333"
+#exec --no-startup-id feh --bg-scale /home/daniel/Pictures/Wallpapers/grid1.png
+exec --no-startup-id xsetroot -solid "#333333"
